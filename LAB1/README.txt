@@ -8,3 +8,5 @@ Data is imported from "arm_angle_control_PID_with_hardware_model_protected.slx".
 
 Task_3.m contains subplots for DMD=[0, 10, 30, 39, 40, 50]
 Please check it for observing the behavior of the arm for increasing DMD.
+
+*** Please download LAB1_data.mat for import the data ***
