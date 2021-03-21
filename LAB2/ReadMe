@@ -1,1 +1,17 @@
+Each TaskX.m MatLab scripts correspond to CheckpointX. 
+*Please download all the data before you run the code.
 
+Parameters.m calculates our parameters, SSTE and Lambda for given inputs. 
+Please check command window after you run the code.
+
+Checkpoint1:
+Task1.m contains the linear fit model and give a-b parameters in command window.
+
+Checkpoint2:
+Task2.m contains plots for varying K_p values both for Motor Speed and Motor Drive.
+
+Checkpoint3:
+Task3.m contains plots for varying K_p-T_s-dmd values both for Steady-State Error.
+
+Checkpoint4:
+Task4.m contains plots for transient perfomances for our system.
