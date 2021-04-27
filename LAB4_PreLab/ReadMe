@@ -1,7 +1,0 @@
-This File contains Pre-Laboratory matlab scripts that is used for plotting, collecting data 
-and scripts which will use in main Laboratory.
-
-PreLab_SimulinkResults.m is used for plotting the output for varying K_d in order to observe the effect of derivative compenant to the model.
-***Please download Data_PreLab_Simulinl.mat before you run the corresponding script.
-
-PreLab1.m contains the set-up that will use in main laboratory section, which includes transfer function and IIR filter.
