@@ -1,9 +1,9 @@
 clc;
 
 Ts = 0.01;
-Tp = 1.69;
-theta_s = -28.95;
-dmd = 35;
+Tp = 1.420;
+theta_s = -45.02;
+dmd = 28.27;
 
 w = (2*pi*Ts) / Tp;
 b = -(tan(w)/Ts)^2;

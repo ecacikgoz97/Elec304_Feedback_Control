@@ -2,10 +2,11 @@ close all
 
 % Parameters
 Ts = 0.01;
-a = 46.79015073;
-b = -13.83523877;
-Beta = 0.04;
-N = 50;
+a =  39.69869786;
+b = -19.60424708;
+g = 1587.94791435;
+Beta = 0.102;
+N = 70;
 
 z = zpk('z',Ts);
 
@@ -16,8 +17,8 @@ TransferFunction_Friction = (Ts^2*a*z^(-2))/(1 +(Beta*Ts - 2)*z^(-1) + (1 - (Bet
 
 % Control Model
 IIR = ((N*Ts)/(1-(1-N*Ts)*z^(-1))); % Filter
-Kd_Kp = 1;   % Kd/Kp
-Ki_Kp = 1; % Ki/Kp
+Kd_Kp = 0.15;   % Kd/Kp
+Ki_Kp = 0.3; % Ki/Kp
 PID = 1 + Kd_Kp*(1-z^(-1))/Ts + Ki_Kp*Ts*z^(-1)/(1-z^(-1));  % Proportional-Integral-Derivative Controller
 PID_IIR = 1 + (Kd_Kp*(1-z^(-1))/Ts)*IIR + Ki_Kp*Ts*z^(-1)/(1-z^(-1)); % PID with IIR
 
@@ -26,4 +27,4 @@ con_sys = PID * TransferFunction;
 % sweep Kp from 0 to inf
 rlocus(con_sys);
 
-rltool(TransferFunction, PID);
+rltool(TransferFunction_Friction, PID);
