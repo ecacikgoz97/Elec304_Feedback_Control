@@ -1,1 +1,21 @@
+This Project contains 2 Simulink file and 2 Matlab Script.
 
+arm_angle_control_PID_with_hardware_model_protected_4.slx: Provided Project that is designed by me. Don't need any modifications, just use init.m script for test.
+
+Propeller_Arm_Protected_deltaT_10ms.slxp: Need to be in same folder with "arm_angle_control_PID_with_hardware_model_protected_4.slx" and set it into plant by browsing it.
+
+init.m: User can make all the initialization changes with that file while applying the provided tests. Details are commented in the sctipt.
+  StepTime: the delay given in the input
+  InitialValue: Starting angle (Starting Position)
+  FinalValue: Desired Angle (Ending Position)
+  deltaT: Time Step
+  ArmStartingAngle: Defining the starting position that is connected to the plant (black box model).
+  
+test1.m: Used for Plotting. Needs modification for settling time.
+
+#################### Training ####################
+1. First initialize the test by using init.m
+2. Run init.m
+3. See the output from arm_angle_control_PID_with_hardware_model_protected_4.slx's Arm Angle Scope
+4. Run tes1.m to get matlab plot
+5. Modify settling time in test1.m, according to the matlab plots
