@@ -7,10 +7,10 @@ close all; clc;
 
 %% Defined variables
 StepTime=200;
-InitialValue=89;
-FinalValue=-10;
+InitialValue=0;
+FinalValue=45;
 deltaT=0.01;
-ArmStartAngle=89;
+ArmStartAngle=0;
 
 % For Test1-2-3 initialize:
 %   FinalValue=45 
